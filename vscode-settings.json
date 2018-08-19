@@ -1,0 +1,57 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "editor.fontSize": 14,
+    "files.autoSave": "off",
+    "editor.fontFamily": "'Hack'", // https://github.com/source-foundry/Hack
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "none",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true
+    }
+  ,
+  "editor.cursorStyle": "block",
+  "editor.fontWeight": "normal",
+  "editor.multiCursorModifier": "alt",
+  "editor.insertSpaces": true,
+  "editor.autoIndent": true,
+  "git.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.wordWrap": "off",
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": true,
+  "editor.folding": true,
+  "editor.foldingStrategy": "auto",
+  "editor.fontLigatures": false,
+  "editor.lineNumbers":"on",
+  "editor.links": true,
+  "editor.matchBrackets": true,
+  "editor.multiCursorMergeOverlapping": true,
+  "editor.occurrencesHighlight": true,
+  "editor.parameterHints": true,
+  "editor.snippetSuggestions": "top",
+
+  "window.closeWhenEmpty": false,
+  "window.nativeTabs": false,
+  "explorer.confirmDelete": false,
+
+  "search.location": "sidebar",
+  "emmet.triggerExpansionOnTab": true,
+  
+  "vim.statusBarColorControl": true,
+  "vim.autoindent": true,
+  "vim.cursorStylePerMode" : {
+    "normal": "block",
+    "insert": "line",
+    "replace": "block-outline"
+  },
+  "vim.ignorecase": true,
+  "vim.surround": true,
+  "vim.useCtrlKeys": true
+}
