@@ -1,0 +1,90 @@
+# ~/.tmux.conf
+
+# remap prefix from 'C-b' to 'C-k'
+unbind C-b
+set-option -g prefix C-k
+bind-key C-k send-prefix
+
+# split panes using v and h
+bind v split-window -h
+bind h split-window -v
+unbind '"'
+unbind %
+
+# switch panes using Alt-arrow without prefix
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Enable mouse mode (tmux 2.1 and above)
+set -g mouse on
+#set -g mouse-select-window on
+#set -g mouse-select-pane on
+#set -g mouse-resize-pane on
+
+# don't rename windows automatically
+set-option -g automatic-rename off
+
+# Start windows and panes at 1, not 0
+set -g base-index 1
+setw -g pane-base-index 1
+
+# set change window to C+w without prefix
+bind-key -n C-w next-window
+
+# cycle through layouts using the space bar
+bind -n C-Space select-layout -n
+
+# Create session if none exists
+new-session -n $HOST
+
+# improve colors
+set -g default-terminal "screen-256color"
+
+# clock format:
+set -g status-right ' #{prefix_highlight} %A %d-%m-%G | %H:%M:%S '
+
+# set clock to use 24 hours range instead of 12
+setw -g clock-mode-style 24
+
+# Statusbar update frequency
+set -g status-interval 1
+
+# reload config
+bind r source-file ~/.tmux.conf \; display "Reloaded .tmux.conf"
+
+# ------------------ PLUGINS ----------------------
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Shows CPU usage in the status bar
+set -g @plugin 'tmux-plugins/tmux-cpu'
+
+# continuum : saves the tmux status every X mins
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# save session every 5 minutes
+set -g @continuum-save-interval '5'
+
+# restore last continuum session on tmux start
+set -g @continuum-restore 'on'
+
+# session manager (see shortcuts on manual)
+set -g @plugin 'tmux-plugins/tmux-sessionist'
+
+# highlight when the prefix is hit
+set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @prefix_highlight_show_copy_mode 'on'
+set -g @prefix_highlight_prefix_prompt 'Wait'
+set -g @prefix_highlight_copy_prompt 'Copy'
+set -g @prefix_highlight_output_prefix '< '
+set -g @prefix_highlight_output_suffix ' >'
+
+# Autoinstall tmux plugin manager if it's not installed in the machine
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
