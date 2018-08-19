@@ -5,7 +5,7 @@
     "workbench.statusBar.visible": true,
     "editor.fontSize": 14,
     "files.autoSave": "off",
-    "editor.fontFamily": "'Hack'", // https://github.com/source-foundry/Hack
+    "editor.fontFamily": "'Hack'", // https://github.com/source-foundry/Hack -- or -- apt-get install fonts-hack-ttf
     "editor.tabSize": 4,
     "editor.renderWhitespace": "none",
     "files.exclude": {
