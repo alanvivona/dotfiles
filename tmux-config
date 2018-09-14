@@ -60,6 +60,9 @@ setw -g pane-border-fg colour3
 set -g window-style bg=colour236,fg=default
 set -g window-active-style bg=colour235,fg=default
 
+# Mark windows with new activity
+setw -g monito­r-a­ctivity on
+
 # reload config
 bind r source-file ~/.tmux.conf \; display "Reloaded .tmux.conf"
 
