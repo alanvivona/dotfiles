@@ -1,0 +1,8 @@
+// HOW TO BACKUP PROFILES //
+
+> dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
+> (RESET CONFIG: OPTIONAL) dconf reset -f /org/gnome/terminal/
+> dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
+
+Actual profile config:
+
