@@ -82,6 +82,10 @@ set -g @prefix_highlight_copy_prompt 'Copy'
 set -g @prefix_highlight_output_prefix '< '
 set -g @prefix_highlight_output_suffix ' >'
 
+# Solarized colors
+set -g @plugin 'seebi/tmux-colors-solarized'
+set -g @colors-solarized '256'
+
 # Autoinstall tmux plugin manager if it's not installed in the machine
 if "test ! -d ~/.tmux/plugins/tpm" \
    "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
