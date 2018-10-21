@@ -4,10 +4,17 @@
 e asm.cmtright=true
 
 # Shows pseudocode in disassembly. Eg mov eax, str.ok = > eax = str.ok
-e asm.pseudo = true
+e asm.pseudo = false
 
 # Solarized theme
-eco onedark # over term & tmux config
+# eco solarized
+eco onedark # use this one with solarized-light color scheme on the terminal 
 
 # Use UTF-8 to show cool arrows that do not look like crap :)
 e scr.utf8 = true
+
+# Syntax == intel
+e asm.syntax = intel
+
+# Show help messages on tab completion for commands
+e cfg.newtab = true
