@@ -1,0 +1,22 @@
+# ~/.config/fish/config.fish
+
+# Remove greeting message
+set fish_greeting
+
+if not functions -q fisher
+    echo '================================'
+    echo 'Starting Fish first time config:'
+    echo '================================'
+    set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME /home/vagrant/.config
+    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    fish -c fisher
+
+    git clone --depth 1 https://github.com/junegunn/fzf.git /home/vagrant/.fzf
+    /home/vagrant/.fzf/install --all
+
+    fisher add jethrokuan/fzf
+
+    echo '================================'
+    echo 'Finished Fish first time config!'
+    echo '================================'
+end
