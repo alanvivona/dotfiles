@@ -5,11 +5,14 @@ echo "=== ========== ==="
 
 # installing general tools
 sudo apt-get -y update
-sudo apt-get -y install tmux tmuxinator wget curl git fish locate nload htop glances slurm unzip vim nodejs 
+sudo apt-get -y install tmux tmuxinator wget curl git fish locate nload htop glances slurm unzip vim fonts-hack-ttf jq build-essential file
 
-# linuxbrew
-sudo apt-get -y install build-essential file
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+# pip
+sudo apt-get install python3-pip
+
+# nodejs & npm
+sudo apt-get -y install nodejs npm
+sudo npm install -g tldr vtop
 
 # radare2
 git clone https://github.com/radare/radare2.git
