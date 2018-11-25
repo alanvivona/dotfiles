@@ -4,9 +4,9 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sud
 sudo apt -y -q update; and sudo apt -y install google-chrome-stable
 
 sudo snap install \
-    telegram-desktop\
-    discord\
-    slack --classic\
-    vlc\
-    clementine\
+    telegram-desktop \
+    discord \
+    slack --classic \
+    vlc \
+    clementine \
     firefox # supercharge firefox with addons
