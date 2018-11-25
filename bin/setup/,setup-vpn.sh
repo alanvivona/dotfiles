@@ -3,7 +3,7 @@
 # - Add some logging / comments
 # - Make this part of a tmuxinator config
 
-if sudo apt update; and sudo apt upgrade
+if sudo apt  -q update; and sudo apt upgrade
     sudo apt install openvpn resolvconf
     cd ~
     wget https://www.blackvpn.com/wp-content/uploads/linux/blackvpn_linux.zip

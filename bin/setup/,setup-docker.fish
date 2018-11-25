@@ -1,4 +1,8 @@
-sudo apt update; and sudo apt -y install docker.io docker-compose
+sudo apt  -q update; and sudo apt -y install docker.io
+
+# Docker compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-(uname -s)-(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 # sudo docker pull ubuntu
 # sudo docker pull nginx

@@ -1,4 +1,4 @@
-sudo apt update; and sudo apt install\
+sudo apt -q update; and sudo apt -y install\
     nload\
     htop\
     glances\

@@ -4,7 +4,7 @@ id
 echo "=== ========== ==="
 
 # installing general tools
-sudo apt-get -y update
+sudo apt-get -y -q update
 sudo apt-get -y install tmux tmuxinator wget curl git fish locate nload htop glances slurm unzip vim fonts-hack-ttf jq build-essential file
 
 # pip

@@ -1,5 +1,5 @@
 # i3 (Also consider installing sway over waylan)
-sudo apt update; and sudo apt -y install i3
+sudo apt -q update; and sudo apt -y install i3
 
 # i3 gaps
 

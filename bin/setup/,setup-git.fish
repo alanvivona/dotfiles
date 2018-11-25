@@ -1,9 +1,9 @@
-sudo apt update; and sudo apt -y install git
+sudo apt -q update; and sudo apt -y install git
 git config --global user.name "Alan Vivona"
 git config --global user.email "alan.g.vivona@gmail.com"
 git config --global core.editor "vim"
 
-mkdir ~/Desktop/code
+mkdir -p ~/Desktop/code
 cd ~/Desktop/code
 
 git clone https://github.com/alanvivona/gore
