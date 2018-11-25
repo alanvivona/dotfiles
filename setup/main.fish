@@ -1,10 +1,3 @@
-## DEPENDENCY : FISH SHELL
-# sudo apt -y update
-# sudo apt install fish
-# sudo chsh -s /usr/bin/fish
-# mkdir -p ~/.config/fish
-# echo "set -g -x fish_greeting 'Welcome 0xffb347!! :)'" > ~/.config/fish/config.fish
-
 fish ./upgrade.fish
 fish ./git.fish
 fish ./basic.fish
