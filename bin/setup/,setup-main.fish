@@ -2,50 +2,50 @@
 
 echo "=====--- Copying config files ---====="
 cd
-cp -pr ./bin ~/bin
-cp -pr ./homedir/. ~/
+cp -pr ~/dotfiles/bin/ ~/bin
+cp -pr ~/dotfiles/homedir/. ~/
 
 echo "=====--- Upgrade ---====="
-,setup-upgrade.fish
+~/dotfiles/setup/,setup-upgrade.fish
 
 echo "=====--- Git ---====="
-,setup-git.fish
+~/dotfiles/setup/,setup-git.fish
 
 echo "=====--- Basic stuff ---====="
-,setup-basic.fish
+~/dotfiles/setup/,setup-basic.fish
 
 echo "=====--- VirtualBox ---====="
-,setup-virtualbox.fish
+~/dotfiles/setup/,setup-virtualbox.fish
 
 echo "=====--- Vagrant ---====="
-,setup-vagrant.fish
+~/dotfiles/setup/,setup-vagrant.fish
 
 echo "=====--- Docker ---====="
-,setup-docker.fish
+~/dotfiles/setup/,setup-docker.fish
 
 echo "=====--- Fish Config ---====="
-,setup-fish-config.fish
+~/dotfiles/setup/,setup-fish-config.fish
 
 echo "=====--- Tmux ---====="
-,setup-tmux.fish
+~/dotfiles/setup/,setup-tmux.fish
 
 # echo "=====--- Desktop Env ---====="
-# ,setup-i3.fish
+~/dotfiles/setup/# ,setup-i3.fish
 
 echo "=====--- Javascript Env ---====="
-,setup-js.fish
+~/dotfiles/setup/,setup-js.fish
 
 echo "=====--- Python Env ---====="
-,setup-python.fish
+~/dotfiles/setup/,setup-python.fish
 
 echo "=====--- Radare2 ---====="
-,setup-r2.fish
+~/dotfiles/setup/,setup-r2.fish
 
 echo "=====--- Misc Stuff ---====="
-,setup-misc.fish
+~/dotfiles/setup/,setup-misc.fish
 
 echo "=====--- Multimedia ---====="
-,setup-multimedia.fish
+~/dotfiles/setup/,setup-multimedia.fish
 
 # Terminal
 # sudo apt -y install gnome-terminal
