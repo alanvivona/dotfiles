@@ -1,6 +1,5 @@
 sudo chsh -s /usr/bin/fish
 mkdir -p ~/.config/fish
-echo "set -g -x fish_greeting 'Welcome 0xffb347!! :)'" > ~/.config/fish/config.fish
 
 # Fisher
 set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config

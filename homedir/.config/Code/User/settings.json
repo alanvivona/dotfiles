@@ -1,11 +1,11 @@
-{
-    "window.zoomLevel": 1,
+{ // ~/.config/Code/User/settings.json
+    "window.zoomLevel": 2,
     "workbench.sideBar.location": "left",
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "files.autoSave": "off",
-    "editor.fontFamily": "'Hack'", // https://github.com/source-foundry/Hack -- or -- apt-get install fonts-hack-ttf
+    "editor.fontFamily": "'Hack'",
     "editor.tabSize": 4,
     "editor.renderWhitespace": "none",
     "files.exclude": {
@@ -15,7 +15,7 @@
       "**/.DS_Store": true
     }
   ,
-  "editor.cursorStyle": "block",
+  "editor.cursorStyle": "line",
   "editor.fontWeight": "normal",
   "editor.multiCursorModifier": "alt",
   "editor.insertSpaces": true,

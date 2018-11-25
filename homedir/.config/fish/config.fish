@@ -3,6 +3,10 @@
 # Remove greeting message
 set fish_greeting
 
+# Setting the PATH
+# ~/bin : custom scripts
+set -x PATH $PATH ~/bin
+
 if not functions -q fisher
     echo '================================'
     echo 'Starting Fish first time config:'

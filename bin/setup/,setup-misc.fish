@@ -3,6 +3,6 @@ sudo apt update; and sudo apt install\
     htop\
     glances\
     slurm\
-    jq\
+    jq
 sudo npm install -g tldr vtop
 sudo snap install fkill

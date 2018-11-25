@@ -7,4 +7,4 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update; and sudo apt-get install yarn
 
 # sass global install
-npm install -g sass
+sudo npm install -g sass
