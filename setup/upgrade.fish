@@ -1,0 +1,1 @@
+sudo apt -y update; and sudo apt -y upgrade
