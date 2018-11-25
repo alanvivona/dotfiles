@@ -1,5 +1,5 @@
 # Tmux setup
-sudo apt -q update; and sudo apt -y install tmux tmuxinator
+sudo apt -y install tmux tmuxinator
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 bash ~/.tmux/plugins/tpm/bin/install_plugins
 bash ~/.tmux/plugins/tpm/tpm
