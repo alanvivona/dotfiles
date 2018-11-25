@@ -1,10 +1,11 @@
 # TODO: 
-# - Add DNS/IP leak
+# - Add DNS/IP leak check
 # - Add some logging / comments
 # - Make this part of a tmuxinator config
 
 if sudo apt update; and sudo apt upgrade
     sudo apt install openvpn resolvconf
+    cd ~
     wget https://www.blackvpn.com/wp-content/uploads/linux/blackvpn_linux.zip
     
     if ls ./blackvpn_linux

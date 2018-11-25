@@ -1,5 +1,10 @@
 #!/usr/bin/fish
 
+echo "=====--- Copying config files ---====="
+cd
+cp -pr ./bin ~/bin
+cp -pr ./homedir/. ~/
+
 echo "=====--- Upgrade ---====="
 ,setup-upgrade.fish
 
