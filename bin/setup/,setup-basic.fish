@@ -5,4 +5,5 @@ sudo add-apt-repository -y ppa:snappy-dev/tools; and sudo apt -y -q update; and 
     unzip \
     vim \
     build-essential \
-    snapcraft
+    snapcraft \
+    fonts-hack-ttf
