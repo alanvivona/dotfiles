@@ -16,7 +16,9 @@ if sudo apt  -q update; and sudo apt upgrade
         unzip blackvpn_linux.zip
         rm blackvpn_linux.zip
         cd blackvpn_linux
-        sudo openvpn Privacy-Luxembourg.conf
+        x-www-browser https://www.dnsleaktest.com/
+        x-www-browser https://check.torproject.org/
+        sudo openvpn Privacy-Luxembourg.conf --show-net-up --show-net-up
     end
 end
 
