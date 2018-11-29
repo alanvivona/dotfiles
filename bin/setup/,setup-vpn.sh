@@ -1,5 +1,4 @@
 # TODO: 
-# - Add DNS/IP leak check
 # - Add some logging / comments
 # - Make this part of a tmuxinator config
 
