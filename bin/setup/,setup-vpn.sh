@@ -5,7 +5,7 @@
 if sudo apt-get -qq update; and sudo apt-get -qq -y upgrade
     sudo apt-get -y -qq install openvpn resolvconf
     cd ~
-    wget https://www.blackvpn.com/wp-content/uploads/linux/blackvpn_linux.zip
+    wget --https-only https://www.blackvpn.com/wp-content/uploads/linux/blackvpn_linux.zip
     
     if ls ./blackvpn_linux
         rm -rf ./blackvpn_linux
@@ -19,6 +19,7 @@ if sudo apt-get -qq update; and sudo apt-get -qq -y upgrade
         x-www-browser https://www.dnsleaktest.com/
         sudo openvpn Privacy-Luxembourg.conf
     end
+
 end
 
 

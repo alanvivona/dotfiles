@@ -7,4 +7,5 @@ sudo add-apt-repository -y ppa:snappy-dev/tools; and sudo apt-get -y -qq update;
     build-essential \
     snapcraft \
     expect \
-    fonts-hack-ttf
+    fonts-hack-ttf \
+    apt-transport-https
