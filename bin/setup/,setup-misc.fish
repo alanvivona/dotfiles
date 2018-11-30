@@ -1,4 +1,4 @@
-sudo apt -y install \
+sudo apt-get -y install \
     nload \
     htop \
     glances \

@@ -1,4 +1,4 @@
-sudo apt -qq -y install git
+sudo apt-get -qq -y install git
 git config --global user.name "Alan Vivona"
 git config --global user.email "alan.g.vivona@gmail.com"
 git config --global core.editor "vim"

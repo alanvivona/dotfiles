@@ -1,2 +1,2 @@
-sudo apt -y install vagrant
+sudo apt-get -y install vagrant
 # Provision vagrant machines?

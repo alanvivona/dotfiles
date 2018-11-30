@@ -78,7 +78,7 @@ echo "==========================="
 fish ~/dotfiles/bin/setup/,setup-multimedia.fish
 
 # Terminal
-# sudo apt -y install gnome-terminal
+# sudo apt-get -qq -y install gnome-terminal
 # copy terminal profile!!
 
 echo "==========================="

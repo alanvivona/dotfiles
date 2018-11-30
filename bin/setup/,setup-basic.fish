@@ -1,4 +1,4 @@
-sudo add-apt-repository -y ppa:snappy-dev/tools; and sudo apt -y -qq update; and sudo apt -y install \
+sudo add-apt-repository -y ppa:snappy-dev/tools; and sudo apt-get -y -qq update; and sudo apt-get -y install \
     wget \
     curl \
     locate \
