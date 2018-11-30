@@ -1,7 +1,7 @@
 # dotfiles
 
 cd  
-sudo apt -q -y install git  
+sudo apt -qq -y install git  
 git clone https://github.com/alanvivona/dotfiles.git  
 sh ./dotfiles/bin/setup/,setup-fish-install.sh  
 
