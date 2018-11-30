@@ -4,49 +4,50 @@ echo "==========================="
 echo "=======----- Copying config files -----======="
 echo "==========================="
 cd
-rm -rf ~/dotfiles/ ~/bin
+rm -rf ~/bin
 cp -pr ~/dotfiles/bin/ ~/bin
 cp -pr ~/dotfiles/homedir/. ~/
+rm -rf ~/dotfiles
 
 echo "==========================="
 echo "=======----- Upgrade -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-upgrade.fish
+fish ~/bin/setup/,setup-upgrade.fish
 
 echo "==========================="
 echo "=======----- Git -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-git.fish
+fish ~/bin/setup/,setup-git.fish
 
 echo "==========================="
 echo "=======----- Basic stuff -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-basic.fish
+fish ~/bin/setup/,setup-basic.fish
 
 echo "==========================="
 echo "=======----- VirtualBox -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-virtualbox.fish
+fish ~/bin/setup/,setup-virtualbox.fish
 
 echo "==========================="
 echo "=======----- Vagrant -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-vagrant.fish
+fish ~/bin/setup/,setup-vagrant.fish
 
 echo "==========================="
 echo "=======----- Docker -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-docker.fish
+fish ~/bin/setup/,setup-docker.fish
 
 echo "==========================="
 echo "=======----- Fish Config -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-fish-config.fish
+fish ~/bin/setup/,setup-fish-config.fish
 
 echo "==========================="
 echo "=======----- Tmux -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-tmux.fish
+fish ~/bin/setup/,setup-tmux.fish
 
 # echo "==========================="
 # echo "=======----- Desktop Env -----======="
@@ -55,27 +56,27 @@ fish ~/dotfiles/bin/setup/,setup-tmux.fish
 echo "==========================="
 echo "=======----- Javascript Env -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-js.fish
+fish ~/bin/setup/,setup-js.fish
 
 echo "==========================="
 echo "=======----- Python Env -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-python.fish
+fish ~/bin/setup/,setup-python.fish
 
 echo "==========================="
 echo "=======----- Radare2 -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-r2.fish
+fish ~/bin/setup/,setup-r2.fish
 
 echo "==========================="
 echo "=======----- Misc Stuff -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-misc.fish
+fish ~/bin/setup/,setup-misc.fish
 
 echo "==========================="
 echo "=======----- Multimedia -----======="
 echo "==========================="
-fish ~/dotfiles/bin/setup/,setup-multimedia.fish
+fish ~/bin/setup/,setup-multimedia.fish
 
 # Terminal
 # sudo apt-get -qq -y install gnome-terminal
