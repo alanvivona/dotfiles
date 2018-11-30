@@ -4,6 +4,7 @@ echo "==========================="
 echo "=======----- Copying config files -----======="
 echo "==========================="
 cd
+rm -rf ~/dotfiles/ ~/bin
 cp -pr ~/dotfiles/bin/ ~/bin
 cp -pr ~/dotfiles/homedir/. ~/
 
