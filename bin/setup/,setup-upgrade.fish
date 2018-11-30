@@ -1,1 +1,1 @@
-sudo apt -y -q update; and sudo apt -y upgrade
+sudo apt -y -qq update; and sudo apt -y -qq upgrade

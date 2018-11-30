@@ -4,14 +4,14 @@ id
 echo "=== ========== ==="
 
 # installing general tools
-sudo apt-get -y -q update
-sudo apt-get -y install tmux tmuxinator wget curl git fish locate nload htop glances slurm unzip vim fonts-hack-ttf jq build-essential file
+sudo apt -y -qq update
+sudo apt -y -qq install tmux tmuxinator wget curl git fish locate nload htop glances slurm unzip vim fonts-hack-ttf jq build-essential file
 
 # pip
-sudo apt-get install python3-pip
+sudo apt -y -qq install python3-pip
 
 # nodejs & npm
-sudo apt-get -y install nodejs npm
+sudo apt -y -qq install nodejs npm
 sudo npm install -g tldr vtop
 
 # radare2
