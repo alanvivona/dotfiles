@@ -54,14 +54,19 @@ fish ~/bin/setup/,setup-tmux.fish
 # echo "==========================="
 
 echo "==========================="
-echo "=======----- Javascript Env -----======="
+echo "=======----- Javascript -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-js.fish
 
 echo "==========================="
-echo "=======----- Python Env -----======="
+echo "=======----- Python -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-python.fish
+
+echo "==========================="
+echo "=======----- Golang -----======="
+echo "==========================="
+fish ~/bin/setup/,setup-golang.fish
 
 echo "==========================="
 echo "=======----- Radare2 -----======="
@@ -85,7 +90,7 @@ fish ~/bin/setup/,setup-multimedia.fish
 echo "==========================="
 echo "=======----- VSCode -----======="
 echo "==========================="
-sudo snap install vscode --classic
+fish ~/bin/setup/,setup-vscode.fish
 # Copy vscode configuration, check all plugins are configured
 
 # Go???

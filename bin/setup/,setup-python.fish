@@ -1,4 +1,13 @@
 # Python 3 + pip
 sudo apt-get -y install python3-pip
 
-# install python libraries using pip? jupyter notebook?
+python3 -m pip install --upgrade pip
+
+sudo pip3 install --upgrade \
+    autopep8 \
+    pylint \
+    prospector \
+    pytest \
+    nose \
+    flake8 \
+    ptpython
