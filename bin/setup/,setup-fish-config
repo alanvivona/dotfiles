@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 sudo chsh -s /usr/bin/fish
 mkdir -p ~/.config/fish
 

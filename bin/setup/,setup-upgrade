@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+#!/usr/bin/env fish
+
+sudo apt -y update ; and sudo apt -y upgrade ; and sudo apt -y autoremove

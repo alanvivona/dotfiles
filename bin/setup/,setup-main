@@ -1,4 +1,4 @@
-#!/usr/bin/fish
+#!/usr/bin/env fish
 
 echo "==========================="
 echo "=======----- Copying config files -----======="
@@ -12,76 +12,71 @@ rm -rf ~/dotfiles
 echo "==========================="
 echo "=======----- Upgrade -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-upgrade.fish
+fish ~/bin/setup/,setup-upgrade
 
 echo "==========================="
 echo "=======----- Git -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-git.fish
+fish ~/bin/setup/,setup-git
 
 echo "==========================="
 echo "=======----- Basic stuff -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-basic.fish
+fish ~/bin/setup/,setup-basic
 
 echo "==========================="
 echo "=======----- VirtualBox -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-virtualbox.fish
+fish ~/bin/setup/,setup-virtualbox
 
 echo "==========================="
 echo "=======----- Vagrant -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-vagrant.fish
+fish ~/bin/setup/,setup-vagrant
 
 echo "==========================="
 echo "=======----- Docker -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-docker.fish
+fish ~/bin/setup/,setup-docker
 
 echo "==========================="
 echo "=======----- Fish Config -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-fish-config.fish
+fish ~/bin/setup/,setup-fish-config
 
 echo "==========================="
 echo "=======----- Tmux -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-tmux.fish
+fish ~/bin/setup/,setup-tmux
 
 # echo "==========================="
 # echo "=======----- Desktop Env -----======="
 # echo "==========================="
 
 echo "==========================="
-echo "=======----- Javascript -----======="
+echo "=======----- Javascript Env -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-js.fish
+fish ~/bin/setup/,setup-js
 
 echo "==========================="
-echo "=======----- Python -----======="
+echo "=======----- Python Env -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-python.fish
-
-echo "==========================="
-echo "=======----- Golang -----======="
-echo "==========================="
-fish ~/bin/setup/,setup-golang.fish
+fish ~/bin/setup/,setup-python
 
 echo "==========================="
 echo "=======----- Radare2 -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-r2.fish
+fish ~/bin/setup/,setup-r2
 
 echo "==========================="
 echo "=======----- Misc Stuff -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-misc.fish
+fish ~/bin/setup/,setup-misc
 
 echo "==========================="
 echo "=======----- Multimedia -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-multimedia.fish
+fish ~/bin/setup/,setup-multimedia
 
 # Terminal
 # sudo apt-get -qq -y install gnome-terminal
@@ -90,7 +85,7 @@ fish ~/bin/setup/,setup-multimedia.fish
 echo "==========================="
 echo "=======----- VSCode -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-vscode.fish
+sudo snap install vscode --classic
 # Copy vscode configuration, check all plugins are configured
 
 # Go???

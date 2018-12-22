@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 sudo apt-add-repository -y ppa:fish-shell/release-2
 sudo apt-get -qq update
 sudo apt-get -qq -y install fish

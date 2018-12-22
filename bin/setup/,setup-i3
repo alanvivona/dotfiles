@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 # i3 (Also consider installing sway over waylan)
 sudo apt-get -y install i3
 
