@@ -11,3 +11,6 @@ sudo snap install \
     vlc \
     clementine \
     firefox # supercharge firefox with addons
+
+# Calibre
+sudo -v; and wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin

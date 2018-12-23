@@ -18,6 +18,8 @@ if sudo apt-get -qq update; and sudo apt-get -qq -y upgrade
         cd blackvpn_linux
         x-www-browser https://check.torproject.org/
         x-www-browser https://www.dnsleaktest.com/
+        # curl checkip.amazonaws.com # check ip
+        # shodan host (shodan myip)  # check ip verbose
         sudo openvpn Privacy-Luxembourg.conf
     end
 end
