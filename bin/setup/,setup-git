@@ -13,5 +13,10 @@ git clone https://github.com/alanvivona/resume
 git clone https://github.com/alanvivona/hacking-resources
 git clone https://github.com/alanvivona/code-examples
 git clone https://github.com/alanvivona/dotfiles
+git clone https://github.com/alanvivona/rappel-docker
+git clone https://github.com/alanvivona/r2-docker
+git clone https://github.com/alanvivona/microservices-arch-example
+git clone https://github.com/alanvivona/pwnshop
+git clone https://github.com/alanvivona/rxjs-snippets-vscode
 
 cd
