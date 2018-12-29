@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+
 sudo apt-get -y install \
     nload \
     htop \

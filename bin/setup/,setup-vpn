@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+
 # TODO: 
 # - Add some logging / comments
 # - Make this part of a tmuxinator config

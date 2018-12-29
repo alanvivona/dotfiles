@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+
 # nodejs & npm
 sudo snap install node --channel=10/stable --classic
 

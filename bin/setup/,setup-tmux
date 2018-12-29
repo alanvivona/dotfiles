@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+
 # Tmux setup
 sudo apt-get -y install tmux tmuxinator
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
