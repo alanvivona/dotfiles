@@ -94,3 +94,7 @@ cd
 # Add burp?
  
 sudo pip3 install shodan
+
+cd
+git clone git://git.kali.org/packages/hash-identifier.git ~/bin/hash-identifier
+cd

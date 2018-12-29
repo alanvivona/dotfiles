@@ -5,4 +5,4 @@ set fish_greeting
 
 # Setting the PATH
 # ~/bin : custom scripts
-set -x -g PATH ~/bin $PATH
+set -x -g PATH ~/bin/* $PATH
