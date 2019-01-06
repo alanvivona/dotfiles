@@ -1,5 +1,15 @@
 #!/usr/bin/env sh
 
+# building fish shell from git
+sudo apt-get -y install build-essential ncurses-dev libncurses5-dev gettext autoconf
+git clone https://github.com/fish-shell/fish-shell.git
+cd fish-shell
+autoreconf --no-recursive #if building from Git
+./configure
+make
+sudo make install
+cd
+
 sudo apt-get -y install software-properties-common
 sudo apt-add-repository -y ppa:fish-shell/release-3
 sudo apt-get -qq update
