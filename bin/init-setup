@@ -14,4 +14,4 @@ sudo make install
 cd
 
 echo "/usr/bin/fish" | sudo tee -a /etc/shells
-fish ./setup/,SETUP-MAIN
+fish ~/bin/,SETUP-MAIN

@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 
-sudo snap install vscode --classic
+wget "https://go.microsoft.com/fwlink/?LinkID=760868" --output-document vscode.deb
+sudo dpkg -i 
  
 # Ext
 code --install-extension skyapps.fish-vscode
