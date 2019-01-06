@@ -57,6 +57,7 @@ fish ~/bin/setup/,setup-tmux
 # echo "==========================="
 # echo "=======----- Desktop Env -----======="
 # echo "==========================="
+fish ~/bin/setup/,setup-desktop
 
 echo "==========================="
 echo "=======----- Javascript -----======="
@@ -84,17 +85,12 @@ echo "==========================="
 fish ~/bin/setup/,setup-misc
 
 echo "==========================="
-echo "=======----- Desktop env -----======="
-echo "==========================="
-fish ~/bin/setup/,setup-dektop
-
-echo "==========================="
 echo "=======----- Multimedia -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-multimedia
 
 # Terminal
-# sudo apt-get -qq -y install gnome-terminal
+# sudo apt-get -qq -y install gnome-terminal or st from suckless.org
 # copy terminal profile!!
 
 echo "==========================="
