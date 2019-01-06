@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# this installs the apt-add-repository command
+sudo apt-get -y install software-properties-common
+
 # building fish shell from git
 sudo apt-get -y install build-essential ncurses-dev libncurses5-dev gettext autoconf
 git clone https://github.com/fish-shell/fish-shell.git
@@ -10,11 +13,5 @@ make
 sudo make install
 cd
 
-sudo apt-get -y install software-properties-common
-sudo apt-add-repository -y ppa:fish-shell/release-3
-sudo apt-get -qq update
-sudo apt-get -qq -y install fish
-
 echo "/usr/bin/fish" | sudo tee -a /etc/shells
-chsh -s /usr/bin/fish
 fish ./setup/,SETUP-MAIN
