@@ -90,7 +90,7 @@ echo "==========================="
 fish ~/bin/setup/,setup-multimedia
 
 # Terminal
-# sudo apt-get -qq -y install gnome-terminal or st from suckless.org
+# sudo apt-get -y install gnome-terminal or st from suckless.org
 # copy terminal profile!!
 
 echo "==========================="
