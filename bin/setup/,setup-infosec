@@ -1,4 +1,4 @@
-sudo apt-get -y install \
+sudo apt -y install \
     nasm \
 
     clamav \ # cron or run this periodically?
@@ -22,7 +22,7 @@ sudo apt-get -y install \
   
 # Beef
 cd
-sudo apt-get install -y ruby ruby-dev
+sudo apt install -y ruby ruby-dev
 git clone https://github.com/beefproject/beef
 cd beef
 sudo ./install
@@ -45,7 +45,7 @@ and chmod 755 msfinstall; and ./msfinstall
 # Routersploit
 # FROM : https://github.com/threat9/routersploit
 cd
-sudo apt-get install -y libglib2.0-dev
+sudo apt install -y libglib2.0-dev
 sudo pip3 install bluepy
 git clone https://www.github.com/threat9/routersploit
 cd routersploit
@@ -56,7 +56,7 @@ cd
 
 # SET (social engineer toolkit)
 cd
-sudo apt-get -y install \
+sudo apt -y install \
     apache2 \
     python-requests \
     libapache2-mod-php \

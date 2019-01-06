@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 # this installs the apt-add-repository command
-sudo apt-get -y install software-properties-common
+sudo apt -y install software-properties-common
 
 # building fish shell from git
-sudo apt-get -y install build-essential ncurses-dev libncurses5-dev gettext autoconf
+sudo apt -y install build-essential ncurses-dev libncurses5-dev gettext autoconf
 git clone https://github.com/fish-shell/fish-shell.git
 cd fish-shell
 autoreconf --no-recursive #if building from Git

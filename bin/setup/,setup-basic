@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-sudo apt-get -y update; and sudo apt-get -y install \
+sudo apt -y update; and sudo apt -y install \
     wget \
     curl \
     locate \

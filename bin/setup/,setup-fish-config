@@ -13,7 +13,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 fisher add jethrokuan/fzf
 
 # Grc : Generic colourizer
-sudo apt-get -y install grc; and fisher add omf/grc
+sudo apt -y install grc; and fisher add omf/grc
 
 # Python extention: this adds:
 # - pyclean  # recursively clean .pyc and .pyo
