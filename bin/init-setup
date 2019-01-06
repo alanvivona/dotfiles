@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
+sudo apt -y install vim make
+
 # sets vim as default editor, system-wide
-sudo apt -y install vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
 # set sudo password timeout to infinite during the install
