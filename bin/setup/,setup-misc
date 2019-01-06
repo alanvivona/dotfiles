@@ -6,6 +6,7 @@ sudo apt -y install \
     glances \
     slurm \
     jq \
+    tree \
     ddgr \ # duckduckgo cli
 
 sudo npm install -g tldr vtop fkill
