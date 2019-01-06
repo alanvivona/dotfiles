@@ -5,7 +5,9 @@ sudo apt -y install vim
 sudo update-alternatives --set editor /usr/bin/vim.basic
 
 # set sudo password timeout to infinite during the install
-sudo cat /etc/sudoers | sed 's/env_reset/env_reset, timestamp_timeout=-1/' | sudo tee /etc/sudoers
+sudo apt -y install tee
+sudo cp /etc/sudoers /etc/sudoers.bkp
+sudo cat /etc/sudoers.bkp | sed 's/env_reset/env_reset, timestamp_timeout=-1/' | sudo tee /etc/sudoers 1>/dev/null
 
 # this installs the apt-add-repository command
 sudo apt -y install software-properties-common
@@ -24,4 +26,4 @@ echo "/usr/bin/fish" | sudo tee -a /etc/shells
 fish ~/dotfiles/bin/setup/,SETUP-MAIN
 
 # restore the sudo password timeout to its default value
-sudo cat /etc/sudoers | sed 's/env_reset, timestamp_timeout=-1/env_reset/' | sudo tee /etc/sudoers
+sudo mv /etc/sudoers.bkp /etc/sudoers
