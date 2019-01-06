@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+sudo apt-get install qemu-system
+
+
+
+# sudo qemu-system-x86_64  -hda debian.img -boot d -cdrom ~/Downloads/debian-9.6.0-amd64-netinst.iso -m 2048 -enable-kvm
+

@@ -79,6 +79,11 @@ echo "==========================="
 fish ~/bin/setup/,setup-misc
 
 echo "==========================="
+echo "=======----- Desktop env -----======="
+echo "==========================="
+fish ~/bin/setup/,setup-dektop
+
+echo "==========================="
 echo "=======----- Multimedia -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-multimedia

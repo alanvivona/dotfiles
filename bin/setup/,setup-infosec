@@ -1,13 +1,17 @@
 sudo apt-get -qq -y install \
+    nasm \
+
+    clamav \ # cron or run this periodically?
+
     wireshark \
     tshark \ # Use this on tmuxinator?
     tcpdump \
     nmap \
     masscan \
-    macchanger \ # Config macchanger?
-    lynis \ # Configure lynis?
+    macchanger \ # Config macchanger? or cron
+    lynis \ # Configure lynis? or cron
     sqlmap \
-    unix-privesc-check \ # Run this periodically?
+    unix-privesc-check \ # Run this periodically? or cron
  
     yersinia \ # How the fuck to use this?
  
@@ -98,3 +102,4 @@ sudo pip3 install shodan
 cd
 git clone git://git.kali.org/packages/hash-identifier.git ~/bin/hash-identifier
 cd
+
