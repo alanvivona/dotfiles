@@ -1,7 +1,7 @@
 # dotfiles
 
 cd  
-sudo apt-get -qq -y install git  
+sudo apt-get -qq -y install git sudo   
 rm -rf ~/dotfiles ~/bin # for resets only!!!  
 git clone https://github.com/alanvivona/dotfiles.git  
 sh ./dotfiles/bin/setup/,setup-fish-install.sh  

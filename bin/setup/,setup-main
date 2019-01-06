@@ -30,6 +30,11 @@ echo "==========================="
 fish ~/bin/setup/,setup-virtualbox
 
 echo "==========================="
+echo "=======----- Qemu -----======="
+echo "==========================="
+fish ~/bin/setup/,setup-qemu
+
+echo "==========================="
 echo "=======----- Vagrant -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-vagrant
