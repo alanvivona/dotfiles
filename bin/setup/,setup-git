@@ -1,22 +1,7 @@
 #!/usr/bin/env fish
 sudo apt -y install git
-git config --global user.name "Alan Vivona"
-git config --global user.email "alan.g.vivona@gmail.com"
 git config --global core.editor "vim"
 
 mkdir -p ~/Desktop/code
 cd ~/Desktop/code
 
-git clone https://github.com/alanvivona/gore
-git clone https://github.com/alanvivona/ctf-htb-notes
-git clone https://github.com/alanvivona/resume
-git clone https://github.com/alanvivona/hacking-resources
-git clone https://github.com/alanvivona/code-examples
-git clone https://github.com/alanvivona/dotfiles
-git clone https://github.com/alanvivona/rappel-docker
-git clone https://github.com/alanvivona/r2-docker
-git clone https://github.com/alanvivona/microservices-arch-example
-git clone https://github.com/alanvivona/pwnshop
-git clone https://github.com/alanvivona/rxjs-snippets-vscode
-
-cd
