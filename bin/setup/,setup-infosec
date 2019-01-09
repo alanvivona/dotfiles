@@ -19,7 +19,20 @@ sudo apt -y install \
     dc3dd \
     exiftool \
     # photorec?
-  
+
+# AFL
+cd
+wget http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+tar -vxzf afl-latest.tgz
+cd afl-2.52b/
+make
+sudo make install
+cd
+
+# Radamsa
+sudo apt-get -y install gcc make git wget
+git clone https://gitlab.com/akihe/radamsa.git; and cd radamsa; and make; and sudo make install
+
 # Beef
 cd
 sudo apt install -y ruby ruby-dev
@@ -103,3 +116,9 @@ cd
 git clone git://git.kali.org/packages/hash-identifier.git ~/bin/hash-identifier
 cd
 
+# IDA
+wget https://out7.hex-rays.com/files/idafree70_linux.run
+chmod 700 idafree70_linux.run
+./idafree70_linux.run
+# This will trigger a popup, the installation must be done manually
+git clone https://github.com/eugeii/ida-consonance.git # This is a nice color pallete for ida

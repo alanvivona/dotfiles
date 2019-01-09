@@ -3,5 +3,4 @@ sudo apt -y install git
 git config --global core.editor "vim"
 
 mkdir -p ~/Desktop/code
-cd ~/Desktop/code
-
+cd ~/Desktop/code  
