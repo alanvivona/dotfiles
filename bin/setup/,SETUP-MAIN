@@ -84,24 +84,24 @@ echo "=======----- Misc Stuff -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-misc
 
-echo "==========================="
-echo "=======----- Multimedia -----======="
-echo "==========================="
-fish ~/bin/setup/,setup-multimedia
-
 # Terminal
 # sudo apt -y install gnome-terminal or st from suckless.org
 # copy terminal profile!!
 
 echo "==========================="
-echo "=======----- VSCode -----======="
-echo "==========================="
-fish ~/bin/setup/,setup-vscode
-
-echo "==========================="
 echo "=======----- Infosec tools -----======="
 echo "==========================="
 fish ~/bin/setup/,setup-infosec
+
+echo "==========================="
+echo "=======----- Multimedia -----======="
+echo "==========================="
+fish ~/bin/setup/,setup-multimedia
+
+echo "==========================="
+echo "=======----- VSCode -----======="
+echo "==========================="
+fish ~/bin/setup/,setup-vscode
 
 
 

@@ -7,8 +7,7 @@ sudo apt -y install \
     slurm \
     jq \
     tree \
-    entr \
-    ddgr \ # duckduckgo cli
+    entr
 
 sudo npm install -g tldr vtop fkill
 sudo pip3 install asciinema

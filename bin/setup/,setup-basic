@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
 sudo apt -y update; and sudo apt -y install \
+    apt-transport-https \
     wget \
     curl \
     locate \

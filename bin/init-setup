@@ -28,3 +28,5 @@ fish ~/dotfiles/bin/setup/,SETUP-MAIN
 
 # restore the sudo password timeout to its default value
 sudo mv /etc/sudoers.bkp /etc/sudoers
+
+sudo apt autoclean

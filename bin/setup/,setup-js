@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 # nodejs & npm
-curl -sL https://deb.nodesource.com/setup_11.x | bash -
+curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
 sudo apt install -y nodejs
 
 # yarn
