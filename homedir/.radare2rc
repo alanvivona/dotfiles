@@ -18,3 +18,6 @@ e asm.syntax = intel
 
 # Show help messages on tab completion for commands
 e cfg.newtab = true
+
+# When searching for patterns. rop gadgets, etc. Use only executables sections by default
+e search.in = io.maps.x
