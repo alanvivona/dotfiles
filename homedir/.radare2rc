@@ -21,3 +21,6 @@ e cfg.newtab = true
 
 # When searching for patterns. rop gadgets, etc. Use only executables sections by default
 # e search.in = io.maps.x
+
+# propmt autocomplete/suggestions
+e scr.prompt.popup=true
