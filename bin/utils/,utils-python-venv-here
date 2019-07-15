@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+
+python3 -m venv (pwd)/pvenv
