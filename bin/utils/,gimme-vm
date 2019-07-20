@@ -1,0 +1,16 @@
+#!/usr/bin/env fish
+
+switch (echo "$argv[1]")
+case kali KALI kali-linux kalilinux
+    echo "VM selected: Kali Linux"
+    set vagrantfile_source_url "https://raw.githubusercontent.com/alanvivona/dotfiles/master/bin/utils/kali.Vagrantfile"
+case crackme crackmes CRACKME CRACKMES crack CRACK
+    echo "VM selected: Crackmes"
+    set vagrantfile_source_url "https://raw.githubusercontent.com/alanvivona/dotfiles/master/bin/utils/crackme.Vagrantfile"
+case '*'
+    echo "VM type not defined!"
+    exit 1
+end
+
+wget $vagrantfile_source_url --output-document Vagrantfile 
+vagrant up --provision; and vagrant ssh 
