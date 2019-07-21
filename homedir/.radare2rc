@@ -4,23 +4,26 @@
 e asm.cmtright=true
 
 # Shows pseudocode in disassembly. Eg mov eax, str.ok = > eax = str.ok
-e asm.pseudo = false
+e asm.pseudo=false
 
 # Solarized theme
 # eco solarized
 eco onedark # use this one with solarized-light color scheme on the terminal 
 
 # Use UTF-8 to show cool arrows that do not look like crap :)
-e scr.utf8 = true
+e scr.utf8=true
 
 # Syntax == intel
-e asm.syntax = intel
+e asm.syntax=intel
 
 # Show help messages on tab completion for commands
-e cfg.newtab = true
+e cfg.newtab=true
 
 # When searching for patterns. rop gadgets, etc. Use only executables sections by default
-# e search.in = io.maps.x
+# e search.in=io.maps.x
 
 # propmt autocomplete/suggestions
 e scr.prompt.popup=true
+
+# show ESIL emu comments to the side
+e asm.emu=true
