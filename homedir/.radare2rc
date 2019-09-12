@@ -1,7 +1,32 @@
 # ~/.radare2rc
 
+# >>>>>>>> Setup Architecture
+e asm.arch = mips
+e cfg.bigendian = true ; Use little (false) or big (true) endianness
+e asm.os = linux ; used for syscall resolution and so
+e asm.bits = 32 ;Word size in bits at assembler
+# >>>>>>>> Setup Architecture
+
+# Syntax == intel
+e asm.syntax=intel
+
+# Colorize bytes that represent the opcodes of the instruction
+e scr.color.bytes = true
+
+e asm.comments = true
+
+e asm.offset = true ; show offsets
+e asm.reladdr = false ; show relative addresses
+
+e asm.bytes = true ; show bytes
+e asm.flags = true ; show flags
+e asm.functions = true ; show function closures
+e asm.lines = true ; show jump/call lines
+
 # Show comments at right of disassembly if they fit in screen
-e asm.cmtright=true
+e asm.cmtright = true
+# Max number of comment lines (0=unlimit)
+e asm.cmtlines = 0
 
 # Shows pseudocode in disassembly. Eg mov eax, str.ok = > eax = str.ok
 e asm.pseudo=false
@@ -12,9 +37,6 @@ eco onedark # use this one with solarized-light color scheme on the terminal
 
 # Use UTF-8 to show cool arrows that do not look like crap :)
 e scr.utf8=true
-
-# Syntax == intel
-e asm.syntax=intel
 
 # Show help messages on tab completion for commands
 e cfg.newtab=true
