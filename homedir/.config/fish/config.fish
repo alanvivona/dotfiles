@@ -8,7 +8,6 @@ set fish_greeting
 set -x -g PATH ~/bin ~/bin/setup ~/bin/utils $PATH
 
 # Theme: green letters and grey comments and autocompletes
-set -L
 set -U fish_color_normal normal
 set -U fish_color_command 00FF00
 set -U fish_color_quote 44FF44
