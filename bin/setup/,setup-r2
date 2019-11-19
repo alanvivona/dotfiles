@@ -3,4 +3,4 @@ git clone https://github.com/radare/radare2.git
 sudo sh radare2/sys/install.sh
 r2pm init
 r2pm update
-r2pm isntall r2frida r2pipe r4ge
+r2pm isntall r2frida r2pipe r4ge r2ghidra-dec
