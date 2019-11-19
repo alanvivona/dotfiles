@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 echo "Installing General dependencies..."
 sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential binutils automake wget libtool make gcc flex bison openssl libmagic-dev libssl-dev libjansson-dev git
 python3 -m pip install --upgrade pip
