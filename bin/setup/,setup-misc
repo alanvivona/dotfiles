@@ -11,4 +11,4 @@ sudo npm install -g tldr vtop
 sudo snap install fkill
 sudo pip3 install asciinema
 # sudo cargo install ripgrep # maybe?
-sudo python3 -m pip install jupyter
+pip3 install jupyter jupyterthemes --user
