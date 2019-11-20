@@ -66,3 +66,5 @@ echo "Installing Debug utils..."
 gdb
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 echo "Installing check for pip packages to download, this is somewhat tricky..."
+apt-get update && apt-get -y install \
+pip3 install capstone unicorn keystone-engine ropper --user
