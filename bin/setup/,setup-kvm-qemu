@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+sudo apt-get -y install qemu-kvm libvirt-dev bridge-utils virt-manager qemu qemu-kvm qemu-system qemu-utils

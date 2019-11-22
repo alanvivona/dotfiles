@@ -25,9 +25,9 @@ echo "==========================="
 fish ~/bin/setup/,setup-basic
 
 echo "==========================="
-echo "=======----- KVM -----======="
+echo "=======----- KVM & QEMU -----======="
 echo "==========================="
-fish ~/bin/setup/,setup-kvm
+fish ~/bin/setup/,setup-kvm-qemu
 
 echo "==========================="
 echo "=======----- VirtualBox -----======="
