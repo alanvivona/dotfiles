@@ -70,7 +70,7 @@ wget https://www.benf.org/other/cfr/cfr-0.148.jar
 java -jar cfr-0.148.jar --help
 
 echo "Installing Debug utils..."
-gdb
+sudo apt-get -y install gdb
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 echo "Installing check for pip packages to download, this is somewhat tricky..."
 apt-get update && apt-get -y install \
