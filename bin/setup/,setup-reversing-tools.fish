@@ -8,16 +8,18 @@ echo "Installing pwntools (python3 version)..."
 python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev3 --user
 
 echo "Installing Wine..."
-sudo apt-get -y install wine
+sudo apt-get -y install wine-development
 
 echo "Installing Tracing tools..."
 sudo apt-get -y install ltrace strace
 
 echo "Installing Hexeditors..."
-sudo apt-get -y install bless hexdump xxd
+pip3 install hexdump --user
+sudo apt-get -y install bless xxd
 
 echo "Installing Assemblers..."
-sudo apt-get -y install nasm masm gas
+sudo apt-get -y install build-essential # this installs gas assembler
+sudo apt-get -y install nasm
 
 echo "Installing Assembler repl..."
 sudo docker pull alanvivona/rappel-docker
