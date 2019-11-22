@@ -27,7 +27,12 @@ cd
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall; and chmod 755 msfinstall; and ./msfinstall
 
 echo "Installing Radare2..."
-fish ~/bin/setup/,setup-r2
+git clone https://github.com/radare/radare2.git
+sudo sh radare2/sys/install.sh
+r2pm init
+r2pm update
+r2pm install r2frida r4ge r2ghidra-dec
+pip3 install r2pipe --user
 
 echo "Installing Network utils..."
 sudo apt-get -y install wireshark tshark tcpdump nmap
