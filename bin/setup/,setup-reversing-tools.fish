@@ -5,7 +5,7 @@ sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-de
 python3 -m pip install --upgrade pip
 
 echo "Installing pwntools (python3 version)..."
-python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev3
+python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev3 --user
 
 echo "Installing Wine..."
 sudo apt-get -y install wine
