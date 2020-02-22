@@ -24,8 +24,5 @@ sudo apt-get -y install grc; and fisher add omf/grc
 # - pysmtp - Start SMTP debugging server, option port argument. Default is 1025
 fisher add omf/python
 
-# Autocomplete/autoclose () "" || 
-fisher add laughedelic/pisces
-
 # Send notifications after a long process ended
 fisher add franciscolourenco/done
