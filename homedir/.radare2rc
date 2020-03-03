@@ -1,10 +1,10 @@
 # ~/.radare2rc
 
 # >>>>>>>> Setup Architecture
-e asm.arch = mips
-e cfg.bigendian = true ; Use little (false) or big (true) endianness
-e asm.os = linux ; used for syscall resolution and so
-e asm.bits = 32 ;Word size in bits at assembler
+# e asm.arch = mips
+# e cfg.bigendian = true ; Use little (false) or big (true) endianness
+# e asm.os = linux ; used for syscall resolution and so
+# e asm.bits = 32 ;Word size in bits at assembler
 # >>>>>>>> Setup Architecture
 
 # Syntax == intel
