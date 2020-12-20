@@ -1,7 +1,3 @@
 #!/usr/bin/env fish
 
-# Regular system update + upgrade  + clean + update fish completions for new packages
-sudo apt -y update; and sudo apt -y upgrade; and sudo apt -y autoremove; and sudo apt autoclean; and fish_update_completions
-
-# Search for all apps installed from github and add updates/upgrades here
-# i.e : metasploit, routersploit, radare2, etc
+fish_update_completions
