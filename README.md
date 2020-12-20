@@ -2,38 +2,7 @@
 
 VM docs link: https://puppet.com/try-puppet/puppet-learning-vm/download
 
-install puppet:
-
-    # enable puppet repository
-    cd ~
-    wget -O puppet.deb https://apt.puppetlabs.com/puppet-release-focal.deb
-    sudo dpkg -i puppet.deb
-    sudo apt-get update
-    sudo apt-get upgrade
-
-    # install pkgs
-    sudo apt-get install puppetserver puppet-agent git ruby
-    sudo gem install r10k
-
-    source /etc/profile.d/puppet-agent.sh
-    export PATH=/opt/puppetlabs/bin:$PATH
-    
-    echo -ne "Puppet server version: "; puppetserver -v
-    echo -ne "Puppet agent version: " ; puppet agent --version
-    sudo systemctl start puppetserver
-
-    sudo -i
-    puppet config set server $(hostname) --section main
-    puppet ssl bootstrap
-    # test run to see if puppet works
-    puppet agent -t && echo ">>> PUPPET IS WORKING"
-
-    # r10k config
-    mkdir /etc/puppetlabs/r10k
-    wget -O /etc/puppetlabs/r10k/r10k.yaml 
-
-
-    
+run vagrant up for a puppet dev env
 
 # dotfiles
 
