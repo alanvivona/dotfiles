@@ -1,6 +1,4 @@
 node "default" {
-  file { '/root/README.md':
-    ensure => file,
-    source => 'puppet://README.md';
-  }
+  $base_packages = [ 'wget', 'curl', 'locate', 'unzip', 'vim', 'build-essential' ]
+  package { $enhancers: ensure => 'installed' }
 }
