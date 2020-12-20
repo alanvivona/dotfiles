@@ -10,6 +10,7 @@ class profile::base {
     'unrar',
     'vim',
     'build-essential',
+    'fonts-hack-ttf',
   ]
   package { $packages: ensure => 'installed' }
 }

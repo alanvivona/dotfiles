@@ -3,4 +3,5 @@
 #
 class role::nogui {
   include profile::base
+  include profile::virt
 }
