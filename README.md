@@ -28,6 +28,12 @@ install puppet:
     # test run to see if puppet works
     puppet agent -t && echo ">>> PUPPET IS WORKING"
 
+    # r10k config
+    mkdir /etc/puppetlabs/r10k
+    wget -O /etc/puppetlabs/r10k/r10k.yaml 
+
+
+    
 
 # dotfiles
 
