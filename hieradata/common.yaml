@@ -5,8 +5,3 @@ classes:
 ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
-
-resolv::servers:
-  - 8.8.8.8
-  - 1.1.1.1
-  - 8.8.4.4
