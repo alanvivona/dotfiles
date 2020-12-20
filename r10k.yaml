@@ -2,5 +2,5 @@
 :cachedir: '/var/cache/r10k'
 :sources:
   :my-org:
-    remote: 'git@github.com:alanvivona/dotfiles'
+    remote: 'https://github.com/alanvivona/dotfiles'
     basedir: '/etc/puppetlabs/code/environments'
