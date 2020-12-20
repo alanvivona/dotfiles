@@ -2,13 +2,14 @@
 #
 #
 class profile::base {
-  $base_packages = [ 
+  $packages = [ 
     'wget',
     'curl',
     'locate',
     'unzip',
+    'unrar',
     'vim',
     'build-essential',
   ]
-  package { $base_packages: ensure => 'installed' }
+  package { $packages: ensure => 'installed' }
 }
