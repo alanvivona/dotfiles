@@ -11,4 +11,3 @@ class profile::clitools {
   ]
   package { $packages: ensure => installed }
 }
-
