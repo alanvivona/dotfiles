@@ -8,7 +8,6 @@ class profile::virt {
     'bridge-utils',
     'virt-manager',
     'qemu',
-    'qemu-kvm',
     'qemu-system',
     'qemu-utils',
   ]
