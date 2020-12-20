@@ -1,6 +1,9 @@
 ---
 :cachedir: '/var/cache/r10k'
 :sources:
-  :my-org:
-    remote: 'https://github.com/alanvivona/dotfiles'
+  :my-src:
     basedir: '/etc/puppetlabs/code/environments'
+    remote: 'https://github.com/alanvivona/dotfiles'
+    ignore_branch_prefixes:
+      - 'master'
+      - 'debian'
